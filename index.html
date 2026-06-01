@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AICT | Almoayyed Industrial Contracting and Trading</title>
+    <script src="https://jsdelivr.net"></script>
+    <style>
+        :root {
+            --primary: #80225F; /* AICT Deep Maroon/Berry Purple Branding Color */
+            --dark: #1E293B;
+            --light: #F8FAFC;
+            --accent: #E2E8F0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background: var(--light); color: var(--dark); line-height: 1.6; }
+        
+        /* Header */
+        header { background: white; padding: 1.5rem 10%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000; }
+        .logo h1 { color: var(--primary); font-size: 1.8rem; font-weight: 800; }
+        nav a { margin-left: 2rem; text-decoration: none; color: var(--dark); font-weight: 500; transition: color 0.3s; }
+        nav a:hover { color: var(--primary); }
+
+        /* Hero Section */
+        .hero { background: linear-gradient(135deg, rgba(30,41,59,0.95), rgba(128,34,95,0.85)), url('https://unsplash.com') no-repeat center center/cover; padding: 8rem 10%; color: white; text-align: center; }
+        .hero h2 { font-size: 3rem; margin-bottom: 1.5rem; font-weight: 700; }
+        .hero p { font-size: 1.2rem; max-width: 800px; margin: 0 auto 2.5rem; opacity: 0.9; }
+        .cta-btn { background: var(--primary); color: white; padding: 0.8rem 2rem; border: none; font-weight: bold; border-radius: 4px; text-decoration: none; transition: background 0.3s; }
+        .cta-btn:hover { background: #611846; }
+
+        /* Sections */
+        .section { padding: 5rem 10%; }
+        .section-title { text-align: center; font-size: 2.2rem; color: var(--primary); margin-bottom: 3rem; font-weight: 700; }
+        
+        /* Stats/Certifications grid */
+        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .card { background: white; padding: 2.5rem; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; border-top: 4px solid var(--primary); }
+        .card i { color: var(--primary); margin-bottom: 1rem; }
+        .card h3 { margin-bottom: 1rem; font-size: 1.4rem; }
+
+        /* Services Grid */
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+        .service-box { background: white; padding: 1.5rem; border-left: 4px solid var(--primary); border-radius: 0 4px 4px 0; font-weight: 600; }
+
+        /* Contact Details */
+        footer { background: var(--dark); color: white; padding: 4rem 10% 2rem; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem; margin-bottom: 3rem; }
+        .footer-info h4 { font-size: 1.2rem; margin-bottom: 1.5rem; color: white; border-left: 3px solid var(--primary); padding-left: 0.5rem; }
+        .footer-info p { opacity: 0.8; margin-bottom: 0.8rem; display: flex; align-items: center; gap: 0.5rem; }
+        .copy { text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.9rem; opacity: 0.6; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo"><h1>AICT</h1></div>
+        <nav>
+            <a href="#about">Overview</a>
+            <a href="#services">Services</a>
+            <a href="#segments">Segments</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Delivering Excellence in EPC Solutions</h2>
+        <p>Almoayyed Industrial Contracting and Trading B.S.C (Closed) is a premier engineering conglomerate delivering state-of-the-art MEICA solutions to industrial sectors across the Kingdom of Bahrain.</p>
+        <a href="#contact" class="cta-btn">Connect With Us</a>
+    </section>
+
+    <section id="about" class="section">
+        <h2 class="section-title">Corporate Overview & Certified Excellence</h2>
+        <div class="grid-3">
+            <div class="card">
+                <i data-lucide="award" size="40"></i>
+                <h3>Certified Excellence</h3>
+                <p>ISO 9001:2015, ISO 14001:2015, and ISO 45001:2018 certified operations prioritizing absolute QHSE compliance.</p>
+            </div>
+            <div class="card">
+                <i data-lucide="shield-check" size="40"></i>
+                <h3>Government Approved</h3>
+                <p>Licensed EDD Grade-1 Electrical contractor with approvals from Ministry of Works, EWA, Bapco, and GPIC.</p>
+            </div>
+            <div class="card">
+                <i data-lucide="settings" size="40"></i>
+                <h3>Core Competence</h3>
+                <p>Over 4 decades of systems integration skill backed by multi-disciplinary engineering and dedicated in-house technical workforces.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section" style="background:#F1F5F9;">
+        <h2 class="section-title">Core Services & Domains</h2>
+        <div class="services-grid">
+            <div class="service-box">MEICA Turnkey EPC Projects</div>
+            <div class="service-box">Electrical & Instrumentation Projects</div>
+            <div class="service-box">Mechanical, Fabrication & Skid Building</div>
+            <div class="service-box">Industrial Product Sales & Trading</div>
+            <div class="service-box">24/7 Operations & Maintenance (O&M)</div>
+            <div class="service-box">Digital Transformation & Industry 4.0</div>
+            <div class="service-box">Equipment Rental Solutions</div>
+            <div class="service-box">Testing & Calibration Services</div>
+        </div>
+    </section>
+
+    <section id="segments" class="section">
+        <h2 class="section-title">Primary Focused Segments</h2>
+        <div class="grid-3">
+            <div class="card" style="border:1px solid #e2e8f0">
+                <i data-lucide="droplet" size="32"></i>
+                <h3>Water & Wastewater</h3>
+                <p>Desalination plants, pump stations, STP facilities, and RO skid networks.</p>
+            </div>
+            <div class="card" style="border:1px solid #e2e8f0">
+                <i data-lucide="flame" size="32"></i>
+                <h3>Oil, Gas & Petrochemicals</h3>
+                <p>Process piping, GPRMS skids, structural platforms, and turnaround shutdowns.</p>
+            </div>
+            <div class="card" style="border:1px solid #e2e8f0">
+                <i data-lucide="zap" size="32"></i>
+                <h3>Electricity & Infrastructure</h3>
+                <p>HV/MV Substations, power distribution transformers, and solar power installations.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-grid">
+            <div class="footer-info">
+                <h4>Almoayyed Industrial</h4>
+                <p>A trusted partner delivering industrial turnkey project lifecycle support and technical engineering excellence.</p>
+            </div>
+            <div class="footer-info">
+                <h4>Contact Details</h4>
+                <p><i data-lucide="map-pin" size="16"></i> P.O. Box 26259, Manama, Bahrain</p>
+                <p><i data-lucide="phone" size="16"></i> +973 17702609</p>
+                <p><i data-lucide="printer" size="16"></i> +973 17701403</p>
+                <p><i data-lucide="mail" size="16"></i> aictbah@almoayyedintl.com</p>
+            </div>
+        </div>
+        <div class="copy">
+            <p>&copy; 2026 Almoayyed Industrial Contracting and Trading B.S.C (Closed). All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
